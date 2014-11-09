@@ -17,15 +17,16 @@ public class QUEUE {
 	}
 	
 	public void enqueue(int inInt){
-		queueArr[enqueue] = inInt;
-		enqueue++;
+		queueArr[enqueue++] = inInt;
+		//enqueue++;
 		size++;
+		//if size = mSize array needs to be bigger
 	}
 
 	public int dequeue(){
-		int returnVal = dequeue;
-		dequeue++;
-		return queueArr[returnVal];
+		//int returnVal = dequeue;
+		//	dequeue++;
+		return queueArr[dequeue++];
 	}
 	
 }

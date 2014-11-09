@@ -21,15 +21,17 @@ public class GRAPH {
 				matrix[i][j] = 0;
 	}	}	}
 	
-	public void addVertex(char label){
-		
+	public void addVertex(char inLabel){
+		vertexArr[totalVertices++]= new VERTEX(inLabel);
 	}
 	
 	public void addEdge(int inSource, int inDest){
-		
+		matrix[inSource][inDest] = 1;
+		matrix[inDest][inSource] = 1;
+
 	}
 	
-	public void drawvertex(int inVertex){
+	public void drawVertex(int inVertex){
 		
 	}
 	
