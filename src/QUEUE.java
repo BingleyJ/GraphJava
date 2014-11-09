@@ -17,11 +17,14 @@ public class QUEUE {
 	}
 	
 	public void enqueue(int inInt){
-		queueArr[enqueue] = inInt;enqueue++;
+		queueArr[enqueue] = inInt;
+		enqueue++;
+		size++;
 	}
 
 	public int dequeue(){
-		int returnVal = dequeue;dequeue++;
+		int returnVal = dequeue;
+		dequeue++;
 		return queueArr[returnVal];
 	}
 	
