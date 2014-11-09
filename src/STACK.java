@@ -1,5 +1,13 @@
-//Stack Implementation 
-
+/*Stack Implementation 
+ * 
+ * Construct with maxsize
+ * 
+ * void push(x)      -> push x on stack
+ * void pop(x)       -> take off top
+ * void emptyStack() -> return true if empty
+ * void fullStack()  -> return true if full
+ * void peek()       -> return top of stack
+ */
 
 public class STACK {
 	
@@ -17,7 +25,7 @@ public class STACK {
 		stackArr[++top] = inPush; //pre-increment operator
 	}
 	
-	public int pop (int inPop){
+	public int pop (){
 		return (stackArr[top--]);//post increment operator
 	}
 
